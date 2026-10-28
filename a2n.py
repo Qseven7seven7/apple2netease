@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-a2n（本地音乐爬取工具）—— 把 Apple Music 歌单导入网易云音乐
+a2n（Apple 2 NetEase）—— 把 Apple Music 歌单转换导入网易云音乐
 
 用法:
   python3 a2n.py list  "~/Music/Music Library.xml"        列出资料库里所有歌单
