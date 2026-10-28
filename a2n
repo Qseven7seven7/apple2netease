@@ -1,0 +1,11 @@
+#!/bin/bash
+# a2n 启动器：优先用目录内自带的 .venv，回退到系统 python3
+set -euo pipefail
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ -x "$DIR/.venv/bin/python" ]; then
+  PY="$DIR/.venv/bin/python"
+else
+  PY="$(command -v python3 || true)"
+fi
+[ -n "${PY:-}" ] || { echo "找不到 python3" >&2; exit 1; }
+exec "$PY" -u "$DIR/a2n.py" "$@"
