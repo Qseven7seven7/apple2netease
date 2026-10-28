@@ -64,7 +64,7 @@ Apple Music 和网易云音乐之间**没有官方互通方案**，第三方迁�
 ## 安装
 
 ```bash
-git clone https://github.com/Qseven7/apple2netease.git
+git clone https://github.com/2417740151-cloud/apple2netease.git
 cd apple2netease
 
 # 建虚拟环境（可选，但建议）
